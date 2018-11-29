@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style>
+		#loc {
+			border: none;
+			font-weight: bolder;
+			width: 80px;
+		}
+		#state {
+			border: none;
+			font-weight: bolder;
+			width: 110px;
+		}
+		#crops {
+			width: 90px;
+		}
+		#size {
+			width: 80px;
+		}
+		#acre {
+			width: 90px;
+		}
+		#yield {
+			width: 80px;
+		}
+	</style>
+</head>
+<body>
+<div class="form2">
+	<h1>HARVESTING DATA</h1>
+	<form>
+		<h4>FARM LOCATION</h4>
+
+		<input type="" id="state" name="" placeholder="Select your state" disabled>
+		<select>
+			<option>OYO</option>
+			<option>NIGER</option>
+			<option>KEBBI</option>
+			<option>KADUNA</option>
+			<option>BENUE</option>
+			<option>KOGI</option>
+		</select><br><br><br>
+
+		<input type="" id="loc" name="" placeholder="Select L.G.A" disabled>
+		<select>
+			<option>Ogbomoso North</option>
+			<option>Ogbomoso South</option>
+			<option>Ogo Oluwa</option>
+			<option>Oriire</option>
+			<option>Ibadan South</option>
+		</select><br><br><br>
+		<input type="text" name="" placeholder="Input your community" class="inp" ><br><br><br>
+		
+		<h3>CROPS YIELD/LAND SIZE</h3>
+		<input type="text" id="crops" placeholder="crop harvested" name="">&nbsp;<input type="text" id="yield" placeholder="crop yield" name=""><br><br>
+		<input type="number" placeholder="Land size" id="size" name=""> <input type="text" id="acre" placeholder="(Acre/Hectare)" name="">&nbsp;&nbsp;<button onclick="clea()"><img src="add.png" style="width: 15px; height: 15px"></button>
+		<br><br><br>
+		<h4>HARVESTING DATES</h4>
+		<input type="date" name="">
+	</form><br><br>
+	<button>Next page</button>
+</div>
+</body>
+</html>

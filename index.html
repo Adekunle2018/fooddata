@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+
+	<link href="css/main.css" rel="stylesheet">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+
+			var OyoOptions= "<option value=af>Afijio</option><option value=ak>Akinyele</option><option value=at>Atiba</option><option value=ats>Atisbo</option><option value=eg>Egbeda</option><option value=Ino>Ibadan North</option><option value=ins>Ibadan North East</option><option value=inw>Ibadan North West</option><option value=ise>Ibadan South East</option><option value=isw>Ibadan South West</option><option value=ic>Ibarapa Central</option><option value=ie>Ibarapa East</option><option value=in>Ibarapa North</option><option value=ido>Ido</option><option value=ir>Irepo</option><option value=is>Iseyin</option><option value=its>Itesiwaju</option><option value=iwa>Iwajowa</option><option value=kaj>Kajola</option><option value=lag>Lagelu</option><option value=ol>Ogo Oluwa</option><option value=on>Ogbomoso North</option><option value=os>Ogbomoso South</option><option value=osh>Olorunsogo</option><option value=olu>Oluyole</option><option value=orel>Orelope</option><option value=oar>Ona Ara</option><option value=ori>Oriire</option><option value=oe>Oyo East</option><option value=ow>Oyo West</option><option value=se>Saki East</option><option value=sw>Saki West</option><option value=su>Surulere</option>";
+
+			var NigerOptions= "<option value=ag>Agaie</option><option value=agw>Agwara</option><option value=bi>Bida</option><option value=bo>Borgu</option><option value=bos>Bosso</option><option value=ch>Chanchaga</option><option value=ed>Edati</option><option value=gb>Gbako</option><option value=gu>Gurara</option><option value=ka>Katcha</option><option value=ko>Kontagora</option><option value=la>Lapai</option><option value=lav>Lavun</option><option value=ma>Magama</option><option value=mar>Mariga</option><option value=mas>Mashegu</option><option value=mok>Mokwa</option><option value=muy>Muya</option><option value=ats>Paikoro</option><option value=ats>Rafi</option><option value=rij>Rijau</option><option value=sh>Shiroro</option><option value=sul>Suleja</option><option value=taf>Tafa</option><option value=wus>Wushishi</option>";
+
+			var OsunOPtions = "<option value=ai>Aiyedaade</option><option value=aiy>Aiyedire</option><option value=ams>Atakunmosa East</option><option value=amsw>Atakunmosa West</option><option value=bol>Boluwaduro</option><option value=bor>Boripe</option><option value=enor>Ede North</option><option value=eds>Ede South</option><option value=egb>Egbedore</option><option value=Eji>Ejigbo</option><option value=ifs>Ife Central</option><option value=ifea>Ife East</option><option value=ifn>Ife North</option><option value=isou>Ife South</option><option value=ifda>Ifedayo</option><option value=ifl>Ifelodun</option><option value=ila>Ila</option><option value=ieast>Ilesa East</option><option value=ilwe>Ilesa West</option><option value=irepo>Irepodun</option><option value=irew>Irewole</option><option value=iso>Isokan</option><option value=iw>Iwo</option><option value=Ob>Obokun</option><option value=odt>Odo Otin</option><option value=oo>Ola Oluwa</option><option value=olo>Olorunda</option><option value=ori>Oriade</option><option value=or>Orolu</option><option value=osho>Osogbo</option>";
+
+			 var KebbiOptions = "<option value=ali>Aliero</option><option value=ad>Arewa Dandi</option><option value=ar>Argungu</option><option value=aug>Augie</option><option value=ba>Bagudo</option><option value=Birnin>Birnin Kebbi</option><option value=bun>Bunza</option><option value=dan>Dandi</option><option value=fa>Fakai</option><option value=gwa>Gwandu</option><option value=jeg>Jega</option><option value=kal>Kalgo</option><option value=kok>Koko/Besse</option><option value=mai>Maiyama</option><option value=nga>Ngaski</option><option value=sak>Sakaba</option><option value=sha>Shanga</option><option value=sur>Suru</option><option value=wus>Danko/Wasagu</option><option value=ya>Yauri</option><option value=zur>Zuru</option>";
+
+			 var OndoOptions = "<option value=akoko>Akoko North East</option><option value=aknw>Akoko North West</option><option value=aks>Akoko South East</option><option value=aksw>Akoko South West</option><option value=an>Akure North</option><option value=akss>Akure South</option><option value=eseo>Ese Odo</option><option value=idan>Idanre</option><option value=ifede>Ifedore</option><option value=ilaj>Ilaje</option><option value=ileol>Ile Oluji/Okeigbo</option><option value=irel>Irele</option><option value=odi>Odigbo</option><option value=okt>Okitipupa</option><option value=ondea>Ondo East</option><option value=ondwe>Ondo West</option><option value=ose>Ose</option><option value=owo>Owo</option>"
+
+		
+		function stateChanger() {
+			var a = state.value;
+			if (a=='Oyo') {
+				localGov.innerHTML = OyoOptions;
+			};
+
+			if (a=='Niger') {
+				localGov.innerHTML = NigerOptions;
+			};
+			if (a=='Osun') {
+				localGov.innerHTML = OsunOPtions;
+			};
+			if (a=='Kebbi') {
+			 	localGov.innerHTML = KebbiOptions;
+			};
+			if (a=='Ondo') {
+				localGov.innerHTML = OndoOptions;
+			}
+		}
+	</script>
+
+</head>
+<body>
+<div id="planting">
+	<h1>PLANTING DATA</h1>
+	<form id="plantD">
+		<h4>FARM LOCATION</h4>
+
+		<input placeholder="Select your state" disabled>
+		<select id="state" onChange="stateChanger()" required>
+			<option value=""></option>
+			<option value="Oyo">OYO</option>
+			<option value="Osun">OSUN</option>
+			<option value="Niger">NIGER</option>
+			<option value="Kebbi">KEBBI</option>
+			<option value="Kaduna">KADUNA</option>
+			<option value="Benue">BENUE</option>
+			<option value="Kogi">KOGI</option>
+			<option value="Ondo">ONDO</option>
+		</select><br><br><br>
+
+		<input  placeholder="Select L.G.A" disabled>
+		<select id="localGov" required>
+			<!-- <option value="on">Ogbomoso North</option> -->
+			<!-- <option value="OgbS">Ogbomoso South</option>
+			<option value="OgoOluwa">Ogo Oluwa</option>
+			<option value="Oriire">Oriire</option>
+			<option value="IbSouth">Ibadan South</option> -->
+		</select><br><br><br>
+		<input type="text"  placeholder="Input your community" id="community" class="inp" required><br><br><br>
+		
+		<h3>CROPS PLANTED/LAND SIZE</h3>
+		<input type="text" id="crops" placeholder="crop planted" name="">&nbsp;
+        <input type="number" id="landSize" placeholder="land size" name="" required>&nbsp;<span>
+        <select id="unit">
+            <option value="acre">Acre</option>
+            <option value="hectacre">Hectacre</option>
+        </select>
+    </span>
+
+		<br><br><br>
+		<h4>PLANTING DATES</h4>
+		<input type="date" id="plantingDate">
+	</form><br><br>
+	<button onclick="submit()">Submit</button>
+</div>
+<div id="reporter"></div>
+
+<!--<div id="harvesting">-->
+	<!--<h1>HARVESTING DATA</h1>-->
+	<!--<form>-->
+		<!--<h4>FARM LOCATION</h4>-->
+
+		<!--<input placeholder="Select your state" disabled>-->
+		<!--<select id="stateH">-->
+			<!--<option>OYO</option>-->
+			<!--<option>NIGER</option>-->
+			<!--<option>KEBBI</option>-->
+			<!--<option>KADUNA</option>-->
+			<!--<option>BENUE</option>-->
+			<!--<option>KOGI</option>-->
+		<!--</select><br><br><br>-->
+
+		<!--<input   placeholder="Select L.G.A" disabled>-->
+		<!--<select id="localGovH">-->
+			<!--<option>Ogbomoso North</option>-->
+			<!--<option>Ogbomoso South</option>-->
+			<!--<option>Ogo Oluwa</option>-->
+			<!--<option>Oriire</option>-->
+			<!--<option>Ibadan South</option>-->
+		<!--</select><br><br><br>-->
+		<!--<input type="text" placeholder="Input your community" class="inp" ><br><br><br>-->
+
+		<!--<h3>CROPS YIELD/LAND SIZE</h3>-->
+		<!--<input type="text" id="crops" placeholder="crop harvested" name="">&nbsp;<input type="text" id="yield" placeholder="crop yield" name=""><br><br>-->
+		<!--<input type="number" placeholder="Land size" id="size" name=""> <input type="text" id="acre" placeholder="(Acre/Hectare)" name="">&nbsp;&nbsp;<button onclick="clea()"><img src="add.png" style="width: 15px; height: 15px"></button>-->
+		<!--<br><br><br>-->
+		<!--<h4>HARVESTING DATES</h4>-->
+		<!--<input type="date" name="">-->
+	<!--</form><br><br>-->
+	<!--<button onclick="next2()">Next page</button>-->
+<!--</div>-->
+
+<!--<div id="Info">-->
+	<!--<h3>Extensionist Info</h3>-->
+ <!--<form>-->
+ 	<!--Name: <input type="text" name=""><br><br>-->
+ 	<!--Sex: <input type="radio" name="sex">Female<input type="radio" name="sex">Male<br><br>-->
+ 	<!--Contact: <input type="number" name="">-->
+ <!--</form>-->
+ <!--<br><br><br>-->
+ <!--<h3>Farmer's Info</h3>-->
+ <!--<form>-->
+ 	<!--Name: <input type="text" name=""><br><br>-->
+ 	<!--Sex: <input type="radio" name="sex">Female<input type="radio" name="sex">Male<br><br>-->
+ 	<!--Contact: <input type="number" name="">-->
+ <!--</form><br><br>-->
+ <!--<button onclick="subm()">Submit</button>-->
+
+<!--</div>-->
+</body>
+</html>
