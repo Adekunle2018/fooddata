@@ -3,10 +3,10 @@
 <head>
 	<title>Form</title>
 
-	<link href="css/main.css" rel="stylesheet">
+	<!-- <link href="css/main.css" rel="stylesheet">
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js"></script> -->
 	<script>
 
 			var OyoOptions= "<option value=af>Afijio</option><option value=ak>Akinyele</option><option value=at>Atiba</option><option value=ats>Atisbo</option><option value=eg>Egbeda</option><option value=Ino>Ibadan North</option><option value=ins>Ibadan North East</option><option value=inw>Ibadan North West</option><option value=ise>Ibadan South East</option><option value=isw>Ibadan South West</option><option value=ic>Ibarapa Central</option><option value=ie>Ibarapa East</option><option value=in>Ibarapa North</option><option value=ido>Ido</option><option value=ir>Irepo</option><option value=is>Iseyin</option><option value=its>Itesiwaju</option><option value=iwa>Iwajowa</option><option value=kaj>Kajola</option><option value=lag>Lagelu</option><option value=ol>Ogo Oluwa</option><option value=on>Ogbomoso North</option><option value=os>Ogbomoso South</option><option value=osh>Olorunsogo</option><option value=olu>Oluyole</option><option value=orel>Orelope</option><option value=oar>Ona Ara</option><option value=ori>Oriire</option><option value=oe>Oyo East</option><option value=ow>Oyo West</option><option value=se>Saki East</option><option value=sw>Saki West</option><option value=su>Surulere</option>";
@@ -15,9 +15,76 @@
 
 			var OsunOPtions = "<option value=ai>Aiyedaade</option><option value=aiy>Aiyedire</option><option value=ams>Atakunmosa East</option><option value=amsw>Atakunmosa West</option><option value=bol>Boluwaduro</option><option value=bor>Boripe</option><option value=enor>Ede North</option><option value=eds>Ede South</option><option value=egb>Egbedore</option><option value=Eji>Ejigbo</option><option value=ifs>Ife Central</option><option value=ifea>Ife East</option><option value=ifn>Ife North</option><option value=isou>Ife South</option><option value=ifda>Ifedayo</option><option value=ifl>Ifelodun</option><option value=ila>Ila</option><option value=ieast>Ilesa East</option><option value=ilwe>Ilesa West</option><option value=irepo>Irepodun</option><option value=irew>Irewole</option><option value=iso>Isokan</option><option value=iw>Iwo</option><option value=Ob>Obokun</option><option value=odt>Odo Otin</option><option value=oo>Ola Oluwa</option><option value=olo>Olorunda</option><option value=ori>Oriade</option><option value=or>Orolu</option><option value=osho>Osogbo</option>";
 
-			 var KebbiOptions = "<option value=ali>Aliero</option><option value=ad>Arewa Dandi</option><option value=ar>Argungu</option><option value=aug>Augie</option><option value=ba>Bagudo</option><option value=Birnin>Birnin Kebbi</option><option value=bun>Bunza</option><option value=dan>Dandi</option><option value=fa>Fakai</option><option value=gwa>Gwandu</option><option value=jeg>Jega</option><option value=kal>Kalgo</option><option value=kok>Koko/Besse</option><option value=mai>Maiyama</option><option value=nga>Ngaski</option><option value=sak>Sakaba</option><option value=sha>Shanga</option><option value=sur>Suru</option><option value=wus>Danko/Wasagu</option><option value=ya>Yauri</option><option value=zur>Zuru</option>";
+			 var OndoOptions = "<option value=akoko>Akoko North East</option><option value=aknw>Akoko North West</option><option value=aks>Akoko South East</option><option value=aksw>Akoko South West</option><option value=an>Akure North</option><option value=akss>Akure South</option><option value=eseo>Ese Odo</option><option value=idan>Idanre</option><option value=ifede>Ifedore</option><option value=ilaj>Ilaje</option><option value=ileol>Ile Oluji/Okeigbo</option><option value=irel>Irele</option><option value=odi>Odigbo</option><option value=okt>Okitipupa</option><option value=ondea>Ondo East</option><option value=ondwe>Ondo West</option><option value=ose>Ose</option><option value=owo>Owo</option>";
 
-			 var OndoOptions = "<option value=akoko>Akoko North East</option><option value=aknw>Akoko North West</option><option value=aks>Akoko South East</option><option value=aksw>Akoko South West</option><option value=an>Akure North</option><option value=akss>Akure South</option><option value=eseo>Ese Odo</option><option value=idan>Idanre</option><option value=ifede>Ifedore</option><option value=ilaj>Ilaje</option><option value=ileol>Ile Oluji/Okeigbo</option><option value=irel>Irele</option><option value=odi>Odigbo</option><option value=okt>Okitipupa</option><option value=ondea>Ondo East</option><option value=ondwe>Ondo West</option><option value=ose>Ose</option><option value=owo>Owo</option>"
+			 var AbiaOptions = "<option value=abia-north>Abia North</option><option value=abia-south>Abia South</option><option value=arochukwu>Arochuckw</option><option value=bende>Bende</option><option value=ikwuano>Ikwuano</option><option value=isiala>Isiala Ngwa North</option><option value=ins>Isiala Ngwa South</option><option value=isuikwu>Isuikwuato</option><option value=obingwa>Obi Ngwa</option><option value=ohafia>Ohafia</option><option value=osisioma>Osisioma Ngwa</option><option value=ugwunagbo>Ugwunagbo</option><option value=ukwa east>Ukwa East</option><option value=ukwa west>Ukwa West</option><option value=umu>Umu Nneochi</option><option value=umuhianorth>Umuahia North</option><option value=umusouth>Umuahia South</option>";
+
+
+			 	var AdamawaOptions = "<option value=demsa>Demsa</option><option value=fufore>Fufore</option><option value=ganye>Ganye</option><option value=girei>Girei</option><option value=gombi>Gombi</option><option value=guyuk>Guyuk</option><option value=hong>Hong</option><option value=jada>Jada</option><option value=lamurde>Lamurde</option><option value=madagali>Madagali</option><option value=maiha>Maiha</option><option value=mayobelwa>Mayo-Belwa</option><option value=michika>Michika</option><option value=mubinorth>Mubi North</option><option value=mubi south>Mubi South</option><option value=numan>Numan</option><option value=sheleng>Shelleng</option><option value=song>Song</option><option value=toungo>Toungo</option><option value=yola nrth>Yola North</option><option value=wudil>Yola South</option>";
+
+			 	var AkwaIbomOptions = "<option value=abak>Abak</option><option value=east.obolo>Eastern Obolo</option><option value=eket>Eket</option><option value=esiteket>Esit-Eket</option><option value=essien udim>Essien Udim</option><option value=etimekpo>Etim-Ekpo</option><option value=etinan>Etinan</option><option value=ibeno>Ibeno</option><option value=ibesikpo>Ibesikpo-Asutan</option><option value=ibiono>Ibiono Ibom</option><option value=Ika>Ika</option><option value=ikono>Ikono</option><option value=ikotabasi>Ikot Abasi</option><option value=ikotepkene>Ikot Epkene</option><option value=ini>Ini</option><option value=itu>Itu</option><option value=mbo>Mbo</option><option value=mkpat>Mkpat-Enin</option><option value=wudil>Wudil</option><option value=nsitatai>Nsit-Atai</option><option value=nsitibom>Nsit-Ibom</option><option value=nsitubium>Nsit-Ubium</option><option value=obotakara>Obot-Akara</option><option value=okobo>Okobo</option><option value=onna>Onna</option><option value=oron>Oron</option><option value=orukanam>Oruk Anam</option><option value=udunguko>Udung-Uko</option><option value=ukanafun>Ukanafun</option><option value=uruan>Uruan</option><option value=urue>Urue-Offong/Oruko</option><option value=uyo>Uyo</option>";
+
+			 	var AnambraOptions = "<option value=aguata>Aguata</option><option value=anamEast>Anambra East</option><option value=anamwest>Anambra West</option><option value=anaocha>Anaocha</option><option value=awka north>Awka North</option><option value=awka south>Awka South</option><option value=ayamelum>Ayamelum</option><option value=dunukofia>Dunukofia</option><option value=ekwusigo>Ekwusigo</option><option value=idemilinorth>Idemili North</option><option value=idemisouth>Idemili South</option><option value=ihiala>Ihiala</option><option value=njikoka>Njikoka</option><option value=nnewinorth>Nnewi North</option><option value=nnewisou>Nnewi South</option><option value=ogbaru>Ogbaru</option><option value=onitshanorth>Onitsha North</option><option value=onitshasouth>Onitsha South</option><option value=orumbanorth>Orumba North</option><option value=orumbasouth>Orumba South</option><option value=oyi>Oyi</option>"
+
+			 	var BauchiOptions = "<option value=alka>Alkaleri</option><option value=bauchi>Bauchi</option><option value=bogoro>Bogoro</option><option value=danban>Danban</option><option value=darazo>Darazo</option><option value=dass>Dass</option><option value=gamawa>Gamawa</option><option value=ganjuwa>Ganjuwa</option><option value=giade>Giade</option><option value=itas>Itas/Gadau</option><option value=jamaare>Jama'are</option><option value=katagum>Katagum</option><option value=kirfi>Kirfi</option><option value=misau>Misau</option><option value=ningi>Ningi</option><option value=shira>Shira</option><option value=tafabalewa>Tafawa Balewa</option><option value=toro>Toro</option><option value=warji>Warji</option><option value=zaki>Zaki</option>";
+
+			 	var BayelsaOptions = "<option value=brass>Brass</option><option value=ekeremor>Ekeremor</option><option value=oyi>Kolokuma/Opokuma</option><option value=nembe>Nembe</option><option value=ogbia>Ogbia</option><option value=sagbama>Sagbama</option><option value=southernijaw>Southern Ijaw</option><option value=yenogoa>Yenogoa</option>";
+
+			 	var BenueOptions = "<option value=ado>Ado</option><option value=agatu>Agatu</option><option value=apa>Apa</option><option value=buruku>Buruku</option><option value=gboko>Gboko</option><option value=guma>Guma</option><option value=gwer east>Gwer East</option><option value=gwerwest>Gwer West</option><option value=katsinala>Katsina-Allah</option><option value=Konshisha>Konshisha</option><option value=Kwande>Kwande</option><option value=logo>Logo</option><option value=makurdi>Makurdi</option><option value=obi>Obi</option><option value=ogbadibo>Ogbadibo</option><option value=ohimini>Ohimini</option><option value=oju>Oju</option><option value=Okpokwu>Okpokwu</option><option value=otukpo>Otukpo</option><option value=tarka>Tarka</option><option value=ukum>Ukum</option><option value=ushongo>Ushongo</option>"
+
+			 	var BornoOptions = "<option value=abadam>Abadam</option><option value=askira>Askira/Uba</option><option value=bama>Bama</option><option value=bayo>Bayo</option><option value=biu>Biu</option><option value=chibok>Chibok</option><option value=damboa>Damboa</option><option value=dikwa>Dikwa</option><option value=gubio>Gubio</option><option value=Guzamala>Guzamala</option><option value=gwoza>Gwoza</option><option value=hawul>Hawul</option><option value=jere>Jere</option><option value=kaga>Kaga</option><option value=kala>Kala/Balge</option><option value=konduga>Konduga</option><option value=kukawa>Kukawa</option><option value=kwaya>Kwaya Kusar</option><option value=mafa>Mafa</option><option value=magumeri>Magumeri</option><option value=maiduguri>Maiduguri</option><option value=marte>Marte</option><option value=mobbar>Mobbar</option><option value=monguno>Monguno</option><option value=ngala>Ngala</option><option value=nganzai>Nganzai</option><option value=shani>Shani</option>";
+
+			 	var CrossRiverOptions = "<option value=abi>Abi</option><option value=akamkpa>Akamkpa</option><option value=Akpabuyo>Akpabuyo</option><option value=bekwarra>Bekwarra</option<option value=biase>Biase</option><option value=boki>Boki</option><option value=calabarmuni>Calabar Municipal</option><option value=calabar south>Calabar South</option><option value=etung>Etung</option><option value=ikom>Ikom</option><option value=obanliku>Obanliku</option><option value=obubra>Obubra</option><option value=obudu>Obudu</option><option value=odupkpani>Odukpani</option><option value=ogoja>Ogoja</option><option value=yakuur>Yakuur</option><option value=yala>Yala</option>";
+
+			 	var DeltaOptions = "<option value=aniochanor>Aniocha North</option><option value=aniocgasout>Aniocha South</option><option value=bomadi>Bomadi</option><option value=burutu>Burutu</option><option value=ethiope east>Ethiope East</option><option value=ethiopewest>Ethiope West</option><option value=INE>Ika North East</option><option value=ikasouth>Ika South</option><option value=isokonorth>Isoko North</option><option value=Isokosouth>Isoko South</option><option value=ndokwaeast>Ndokwa East</option><option value=ndokwawest>Ndokwa West</option><option value=oshiminorth>Oshimili North</option><option value=oshimisouth>Oshimili South</option><option value=patani>Patani,Delta</option><option value=sapeledelta>Sapele,Delta</option><option value=tarka>Udu,Nigeria</option><option value=ughelinorth>Ugheli North</option><option value=Ughelisouth>Ugheli South</option><option value=Ukwuani>Ukwuani people</option><option value=uvwie>Uvwie</option><option value=wari>Wari</option><option value=warinorth>Wari North</option><option value=warisouth>Wari South</option><option value=WSW>Wari South West</option>";
+
+			 	var EbonyiOptions = "<option value=abakaliki>Abakaliki</option><option value=afikponorth>Afikpo North</option><option value=afikposouth>Afikpo South/Edda</option><option value=ebonyi>Ebonyi</option><option value=ezzanorth>Ezza North</option><option value=ezzasouth>Ezza South</option><option value=ikwo>Ikwo</option><option value=ishielu>Ishielu</option><option value=ivo>Ivo</option><option value=izzi>Izzi</option><option value=ohaozara>Ohaozara</option><option value=Ohaukwu>Ohaukwu</option><option value=onicha>Onicha</option>";
+
+			 	var EdoOptions = "<option value=akokedo>Akoko-Edo</option><option value=egor>Egor</option><option value=esancentral>Esan Central</option><option value=esannoteast>Esan North East</option><option value=esansoutheast>Esan South East</option><option value=esanwest>Esan West</option><option value=etsakocent>Etsako Central</option><option value=etsakoeast>Etsako East</option><option value=etsakowest>Etsako West</option><option value=igueben>Igueben</option><option value=ikpoba>Ikpoba-Okha</option><option value=oredo>Oredo</option><option value=Orhionmwon>Orhionmwon</option><option value=ovia-ne>Ovia North-East</option><option value=akokedo>Ovia South-West</option><option value=owaneast>Owan East</option><option value=owanwest>Owan West</option><option value=Uhunmwonde>Uhunmwonde</option>";
+
+			 	 var EkitiOptions = "<option value=adoekiti>Ado Ekiti</option><option value=Ikere>Ikere</option><option value=Oye>Oye</option><option value=Aiyek>Aiyekire</option><option value=Efon>Efon</option><option value=Ekitieas>Ekiti East</option><option value=Ekitsw>Ekiti South West</option><option value=Ekitiwest>Ekiti West</option><option value=Emure>Emure</option><option value=Idosi>Ido-Osi</option><option value=Ijero>Ijero</option><option value=Ikole>Ikole</option><option value=ileje>Ilejemeje</option><option value=irepod>Irepodun/Ifelodun</option><option value=Iseor>Ise/Orun</option><option value=Moba>Moba</option>";
+
+
+			 	var EnuguOptions = "<option value=aninri>Aninri</option><option value=awgu>Awgu</option><option value=enugueast>Enugu East</option><option value=enugunorth>Enugu North</option><option value=enugusouth>Enugu South</option><option value=ezeagu>Ezeagu</option><option value=Igboetiti>Igbo Etiti</option><option value=Igboezenorth>Igbo Eze North</option><option value=Igboezesou>Igbo Eze South</option><option value=Izi Uzo>Izi Uzo</option><option value=nkanueast>Nkanu East</option><option value=nkanuwest>Nkanu West</option><option value=nsukka>Nsukka</option><option value=ojiriver>Oji River</option><option value=udenu>Udenu</option><option value=udi>Udi</option><option value=uzouwani>Uzo-Uwani</option>";
+
+			 	var FctOptions = "<option value=abaji>Abaji</option><option value=abujamunicipal>Abuja Municipal</option><option value=bwari>Bwari</option><option value=gwagwalada>Gwagwalada</option><option value=kuje>Kuje</option><option value=kwali>Kwali</option>";
+
+			 	var GombeOptions = "<option value=akko>Akko</option><option value=Ikere>Ikere</option><option value=balanga>Balanga</option><option value=billiri>Billiri</option><option value=dukku>Dukku</option><option value=funakaye>Funakaye</option><option value=gombe>Gombe</option><option value=Kaltungo>Kaltungo</option><option value=kumo>Kumo</option><option value=kwami>Kwami</option><option value=nafada>Nafada</option><option value=shongom>Shongom</option><option value=Ikere>Yamaltu/Deba</option>";
+
+			 	var ImoOptions = "<option value=aboh>Aboh Mbaise</option><option value=ahiazu>Ahiazu Mbaise</option><option value=ehime>Ehime Mbano</option><option value=Ezinihitte>Ezinihitte Mbaise</option><option value=Ideato>Ideato North</option><option value=ideatosouth>Ideato South</option><option value=ihitte>Ihitte/Uboma</option><option value=ikeduru>Ikeduru</option><option value=Isiala>Isiala Mbano</option><option value=Isu>Isu</option><option value=mbaitoli>Mbaitoli</option><option value=ngor okpala>Ngor Okpala</option><option value=njaba>Njaba</option><option value=nkwerre>Nkwerre</option><option value=Nwangele>Nwangele</option><option value=obowo>Obowo</option><option value=oguta>Oguta</option><option value=ohaji>Ohaji/Egbema</option><option value=okigwe>Okigwe</option><option value=onuimo>Onuimo</option><option value=orlu>Orlu</option><option value=orsu>Orsu</option><option value=oru east>Oru East</option><option value=oruwest>Oru West</option><option value=owerri>Owerri Municipal</option><option value=owerrinorth>Owerri North</option><option value=owerriwest>Owerri West</option>";
+
+			 	 var JigawaOptions = "<option value=auyo>Auyo</option><option value=babura>Babura</option><option value=birniwa>Birniwa</option><option value=birninkud>Birnin Kudu</option><option value=buji>Buji</option><option value=dutse>Dutse</option><option value=gagara>Gagarawa</option><option value=garki>Garki</option><option value=gumel>Gumel</option><option value=guri>Guri</option><option value=gwaram>Gwaram</option><option value=gwiwa>Gwiwa</option><option value=hadejia>Hadejia</option><option value=jahun>Jahun</option><option value=kafhausa>Kafin Hausa</option><option value=kaugama>Kaugama</option><option value=kazaure>Kazaure</option><option value=kirikasa>Kiri Kasama</option><option value=kiyawa>Kiyawa</option><option value=maigatari>Maigatari</option><option value=malam madori>Malam Madori</option><option value=miga>Miga</option><option value=ringim>Ringim</option><option value=roni>Roni</option><option value=suletankar>Sule Tankarkar</option><option value=taura>Taura</option><option value=yankwashi>Yankwashi</option>";
+
+			 	 var KadunaOptions = "<option value=Bg>Birnin Gwari</option><option value=chk>Chikun</option><option value=giw>Giwa</option><option value=Igab>Igabi</option><option value=ikar>Ikara</option><option value=jaba>Jaba</option><option value=Jema>Jema'a</option><option  value=kach>Kachia</option><option value=kdnoth>Kaduna North</option><option value=kdsth>Kaduna South</option><option value=karg>Kagarko</option><option value=Kaj>Kajuru</option><option value=kaura>kaura</option><option value=kauru>Kauru</option><option value=kubau>Kubau</option><option value=kudan>Kudan</option><option value=lere>Lere</option><option value=makarfi>Makarfi</option><option value=sabongari>Sabon Gari</option><option value=Sanga>Sanga</option><option value=soba>Soba</option><option value=zangon>Zango</option>";
+
+			 	 var KanoOptions = "<option value=ajingi>Ajingi</option><option value=albasu>Albasu</option><option value=bagwai>Bagwai</option><option value=bebeji>Bebeji</option><option value=bichi>Bichi</option><option value=bunkure>Bunkure</option><option value=dala>Dala</option><option value=dambatta>Dambatta</option><option value=dawakinkud>Dawakin Kudu</option><option value=dawakintof>Dawakin Tofa</option><option value=doguwa>Doguwa</option><option value=fagge>Fagge</option><option value=gaba>Gabasawa</option><option value=garko>Garko</option><option value=garum>Garum Mallam</option><option value=gaya>Gaya</option><option value=gazawa>Gezawa</option><option value=gwale>Gwale</option><option value=gwarzo>Gwarzo</option><option value=kabo>Kabo</option><option value=kano mun>Kano Municipal</option><option value=karaye>Karaye</option><option value=kibiya>Kibiya</option><option value=kiru>Kiru</option><option value=kumbot>Kumbotso</option><option value=kunchi>Kunchi</option><option value=kura>Kura</option><option value=madobi>Madobi</option><option value=makodia>Makoda</option><option value=minjibir>Minjibir</option><option value=nasarawa>Nasarawa</option><option value=rano>Rano</option><option value=rimin>Rimin Gado</option><option value=rogo>Rogo</option><option value=shanono>Shanono</option><option value=sumaila>Sumaila</option><option value=takai>Takai</option><option value=tarauni>Tarauni</option><option value=tofa>Tofa</option><option value=tsanyawa>Tsanyawa</option><option value=ungogo>Ungogo</option><option value=warawa>Warawa</option><option value=wudil>Wudil</option>";
+
+			 	 var KatsinaOptions = "<option value=bako>Bakori</option><option value=batag>Batagarawa</option><option value=bats>Batsari</option><option value=baure>Baure</option><option value=bindawa>Bindawa</option><option value=charanchi>Charanchi</option><option value=danmusa>Dan Musa</option><option value=dandume>Dandume</option><option value=danja>Danja</option><option value=dutsi>Dutsi</option><option value=dutsinma>Dutsin-Ma</option><option value=faskari>Faskari</option><option value=funtua>Funtua</option><option value=ingwa>Ingawa</option><option value=jibia>Jibia</option><option value=kafur>Kafur</option><option value=kaita>Kaita</option><option value=kankara>Kankara</option><option value=kankia>Kankia</option><option value=katsina>Katsina</option><option value=kurfi>Kurfi</option><option value=kusada>Kusada</option><option value=mai'adua>Mai'Adua</option><option value=malumfashi>Malumfashi</option><option value=mani>Mani</option><option value=mashi>Mashi</option><option value=matazu>Matazu</option><option value=musawa>Musawa</option><option value=rimi>Rimi</option><option value=sabuwa>Sabuwa</option><option value=safana>Safana</option><option value=sandamu>Sandamu</option><option value=zango>Zango</option>";
+
+				var KebbiOptions = "<option value=ali>Aliero</option><option value=ad>Arewa Dandi</option><option value=ar>Argungu</option><option value=aug>Augie</option><option value=ba>Bagudo</option><option value=Birnin>Birnin Kebbi</option><option value=bun>Bunza</option><option value=dan>Dandi</option><option value=fa>Fakai</option><option value=gwa>Gwandu</option><option value=jeg>Jega</option><option value=kal>Kalgo</option><option value=kok>Koko/Besse</option><option value=mai>Maiyama</option><option value=nga>Ngaski</option><option value=sak>Sakaba</option><option value=sha>Shanga</option><option value=sur>Suru</option><option value=wus>Danko/Wasagu</option><option value=ya>Yauri</option><option value=zur>Zuru</option>";
+
+				var KogiOptions = "<option value=adavi>Adavi</option><option value=ajaokuta>Ajaokuta</option><option value=ankpa>Ankpa</option><option value=bassa>Bassa</option><option value=dekina>Dekina</option><option value=ibaji>Ibaji</option><option value=Idah>Idah</option><option value=igalamela>Igalamela-Odolu</option><option value=ijumu>Ijumu</option><option value=kabba>Kabba/Bunu</option><option value=kotonkarfe>Koton Karfe</option><option value=lokoja>Lokoja</option><option value=mopa-muro>Mopa-Muro</option><option value=ofu>Ofu</option><option value=ogori>Ogori/Magongo</option><option value=okehi>Okehi</option><option value=okene>Okene</option><option value=olamaboro>Olamaboro</option><option value=omala>Omala</option><option value=yagbaeast>Yagba East</option><option value=yagbawest>Yagba West</option>";
+
+
+				var KwaraOptions = "<option value=asa>Asa</option><option value=baruten>Baruten</option><option value=edu>Edu</option><option value=ekiti>Ekiti</option><option value=ifelodun>Ifelodun</option><option value=ilorin east>Ilorin East</option><option value=ilorinsouth>Ilorin South</option><option value=ilorinwest>Ilorin West</option><option value=irepodun>Irepodun</option><option value=isin>Isin</option><option value=kaiama>Kaiama</option><option value=moro>Moro</option><option value=offa>Offa</option><option value=oke ero>Oke Ero</option><option value=oyun>Oyun</option><option value=pategi>Pategi</option>";
+
+				var LagosOptions = "<option value=agege>Agege</option><option value=ajeromi>Ajeromi-Ifelodun</option><option value=alimoso>Alimosho</option><option value=amuwo>Amuwo-Odofin</option><option value=apapa>Apapa</option><option value=badagry>Badagry</option><option value=epe>Epe</option><option value=etiosa>Eti-Osa</option><option value=ibejulekki>Ibeju/Lekki</option><option value=ifakoijaye>Ifako-Ijaye</option><option value=ikeja>Ikeja</option><option value=ikorodu>Ikorodu</option><option value=kosofe>Kosofe</option><option value=lagosisland>Lagos Island</option><option value=lagosmainland>Lagos Mainland</option><option value=mushin>Mushin</option><option value=ojo>Ojo</option><option value=oshodisolo>Oshodi-Isolo</option><option value=shomolu>Shomolu</option><option value=suru>Surulere</option>";
+
+				var OgunOptions = "<option value=abeokutano>Abeokuta North</option><option value=abksouth>Abeokuta South</option><option value=adoodo>Ado-odo/Ota</option><option value=ewekoro>Ewekoro</option><option value=Ifo>Ifo</option><option value=ijebueast>Ijebu East</option><option value=ijebunorth>Ijebu North</option><option value=Ijebnoeast>Ijebu North East</option><option value=ijebuode>Ijebu Ode</option><option value=ikenne>Ikenne</option><option value=imekoafon>Imeko Afon</option><option value=ipokia>Ipokia</option><option value=lisa>Lisa</option><option value=obafemiowode>Obafemi Owode</option><option value=odeda>Odeda</option><option value=odogbolu>Odogbolu</option><option value=ogunwaterside>Ogun Waterside</option><option value=remonorth>Remo North</option><option value=sagamu>Sagamu</option><option value=yewanorth>Yewa North</option><option value=suru>Yewa South</option>";
+
+				var PlateauOptions = "<option value=barkinladi>Barkin Ladi</option><option value=bassa>Bassa</option><option value=bokkos>Bokkos</option><option value=jos east>Jos East</option><option value=josnorth>Jos North</option><option value=jos south>Jos South</option><option value=kanam>Kanam</option><option value=kanke>Kanke</option><option value=Langtangnorth>Langtang North</option><option value=Langtangsout>Langtang South</option><option value=mangu>Mangu</option><option value=mikang>Mikang</option><option value=pankshin>Pankshin</option><option value=quanpan>Qua'an Pan</option><option value=riyom>Riyom</option><option value=shendam>Shendam</option><option value=wase>Wase</option>";
+
+				var RiversOptions = "<option value=abua>Abua-Odual</option><option value=ahoadaeast>Ahoada East</option><option value=ahoadawest>Ahoada West</option><option value=akukutoru>Akuku-Toru</option><option value=andoni>Andoni</option><option value=asaritoru>Asari-Toru</option><option value=bonny>Bonny</option><option value=degema>Degema</option><option value=eleme>Eleme</option><option value=emohua>Emohua</option><option value=etche>Etche</option><option value=gokana>Gokana</option><option value=ikwerre>Ikwerre</option><option value=kana>Khana</option><option value=obioakpor>Obio-Akpor</option><option value=ogba-egbema>Ogba-Egbema-Ndoni</option><option value=ogubolo>Ogu-Bolo</option><option value=okrika>Okrika</option><option value=omuma>Omuma</option<option value=opobo>Opobo-Nkoro</option><option value=oyigbo>Oyigbo</option><option value=portharcourt>Port Harcourt</option><option value=tai>Tai</option>";
+
+				var SokotoOptions = "<option value=binji>Binji</option><option value=bodinga>Bodinga</option><option value=dange>Dange Shuni</option><option value=gada>Gada</option><option value=goronyo>Goronyo</option><option value=gudu>Gudu</option><option value=gwadabawa>Gwadabawa</option><option value=illela>Illela</option><option value=isa>Isa</option><option value=kebbe>Kebbe</option><option value=kware>Kware</option><option value=rabah>Rabah</option><option value=sabon birni>Sabon Birni</option><option value=shagari>Shagari</option><option value=silame>Silame</option><option value=sokotonorth>Sokoto North</option><option value=sokotosouth>Sokoto South</option><option value=tambuwal>Tambuwal</option><option value=tangaza>Tangaza</option><option value=tureta>Tureta</option><option value=wamako>Wamako</option><option value=wurna>Wurna</option><option value=yabo>Yabo</option>";
+
+				var TarabaOptions = "<option value=ardo>Ardo Kola</option><option value=bali>Bali</option><option value=donga>Donga</option><option value=gashaka>Gashaka</option><option value=gassol>Gassol</option><option value=ibi>Ibi</option><option value=jalingo>Jalingo</option><option value=karim lamido>Karim Lamido</option><option value=kurmi>Kurmi</option><option value=lau>Lau</option><option value=sardauna>sardauna</option><option value=takum>Takum</option><option value=ussa>Ussa</option><option value=wukari>Wukari</option><option value=yorro>Yorro</option><option value=zing>Zing</option>";
+
+				var YobeOptions = "<option value=bade>Bade</option><option value=bursari>Bursari</option><option value=damaturu>Damaturu</option><option value=fika>Fika</option><option value=fune>Fune</option><option value=geidam>Geidam</option><option value=gujba>Gujba</option><option value=gulani>Gulani</option><option value=jakusko>Jakusko</option><option value=karasuwa>Karasuwa</option><option value=machina>Machina</option><option value=nangere>Nangere</option><option value=nguru>Nguru</option><option value=potiskum>Potiskum</option><option value=tarmuwa>Tarmuwa</option><option value=yunusari>Yunusari</option><option value=yusufari>Yusufari</option>";
+
+				 var NasarawaOptions = "<option value=akwanga>Akwanga</option><option value=awe>Awe</option><option value=doma>Doma</option><option value=karu>Karu</option><option value=keana>Keana</option><option value=keffi>Keffi</option><option value=kokona>Kokona</option><option value=lafia>Lafia</option><option value=nasarawa>Nasarawa</option><option value=nasarawa-eggon>Nasarawa-Eggon</option><option value=obi>Obi</option><option value=toto>Toto</option><option value=wamba>Wamba</option>";
+
+				var ZamfaraOptions = "<option value=anka>Anka</option><option value=bakura>Bakura</option><option value=Ifo>Birnin Magaji/Kiyaw</option><option value=bukuyum>Bukkuyum</option><option value=bungudu>Bungudu</option><option value=gummi>Gummi</option><option value=gusau>Gusau</option><option value=kaura>Kaura Namoda</option><option value=maradun>Maradun</option><option value=maru>Maru</option><option value=shinkafi>Shinkafi</option><option value=talata mafara>Talata Mafara</option><option value=tsafe>Tsafe</option><option value=zurmi>Zurmi</option>";
 
 		
 		function stateChanger() {
@@ -37,7 +104,102 @@
 			};
 			if (a=='Ondo') {
 				localGov.innerHTML = OndoOptions;
-			}
+			};
+
+			if (a=='Ekiti') {localGov.innerHTML=EkitiOptions;
+			};
+
+			if (a=='Kaduna') {localGov.innerHTML=KadunaOptions;
+			};
+
+			if (a=='Jigawa') {localGov.innerHTML=JigawaOptions;
+			};
+
+			if (a=='Kano') {localGov.innerHTML=KanoOptions;
+			};
+
+			if (a=='Katsina') {localGov.innerHTML=KatsinaOptions;
+			};
+
+			if (a=='Abia') {localGov.innerHTML=AbiaOptions;
+			};
+
+			if (a=='Adamawa') {localGov.innerHTML=AdamawaOptions;
+			};
+
+			if (a=='Akwa Ibom') {localGov.innerHTML=AkwaIbomOptions;
+			};
+
+			if (a=='Anambra') {localGov.innerHTML=AnambraOptions;
+			};
+			if (a=='Bauchi') {localGov.innerHTML=BauchiOptions;
+			};
+
+			if (a=='Bayelsa') {localGov.innerHTML=BayelsaOptions;
+			};
+
+			if (a=='Borno') {localGov.innerHTML=BornoOptions;
+			};
+
+			if (a=='Benue') {localGov.innerHTML=BenueOptions;
+			};
+			if (a=='Cross River') {localGov.innerHTML=CrossRiverOptions;
+			};
+
+			if (a=='Delta') {localGov.innerHTML=DeltaOptions;
+			};
+
+			if (a=='Ebonyi') {localGov.innerHTML=EbonyiOptions;
+			};
+
+			if (a=='Edo') {localGov.innerHTML=EdoOptions;
+			};
+
+			if (a=='Enugu') {localGov.innerHTML=EnuguOptions;
+			};
+
+			if (a=='Fct') {localGov.innerHTML=FctOptions;
+			};
+
+			if (a=='Gombe') {localGov.innerHTML=GombeOptions;
+			};
+
+			if (a=='Imo') {localGov.innerHTML=ImoOptions;
+			};
+
+			if (a=='Kogi') {localGov.innerHTML=KogiOptions;
+			};
+
+			if (a=='Kwara') {localGov.innerHTML=KwaraOptions;
+			};
+
+			if (a=='Lagos') {localGov.innerHTML=LagosOptions;
+			};
+
+			if (a=='Ogun') {localGov.innerHTML=OgunOptions;
+			};
+
+			if (a=='Nasarawa') {localGov.innerHTML=NasarawaOptions;
+			};
+
+			if (a=='Plateau') {localGov.innerHTML=PlateauOptions;
+			};
+
+			if (a=='Rivers') {localGov.innerHTML=RiversOptions;
+			};
+
+			if (a=='Sokoto') {localGov.innerHTML=SokotoOptions;
+			};
+
+			if (a=='Taraba') {localGov.innerHTML=TarabaOptions;
+			};
+
+			if (a=='Yobe') {localGov.innerHTML=YobeOptions;
+			};
+			if (a=='Zamfara') {localGov.innerHTML=ZamfaraOptions;
+			};
+		
+
 		}
 	</script>
 
@@ -51,14 +213,44 @@
 		<input placeholder="Select your state" disabled>
 		<select id="state" onChange="stateChanger()" required>
 			<option value=""></option>
-			<option value="Oyo">OYO</option>
-			<option value="Osun">OSUN</option>
-			<option value="Niger">NIGER</option>
-			<option value="Kebbi">KEBBI</option>
-			<option value="Kaduna">KADUNA</option>
+			<option value="Abia">ABIA</option>
+			<option value="Adamawa">ADAMAWA</option>
+			<option value="Akwa Ibom">AKWA IBOM</option>
+			<option value="Anambra">ANAMBRA</option>
+			<option value="Bauchi">BAUCHI</option>
+			<option value="Bayelsa">BAYELSA</option>
 			<option value="Benue">BENUE</option>
+			<option value="Borno">BORNO</option>
+			<option value="Cross River">CROSS RIVER</option>
+			<option value="Delta">DELTA</option>
+			<option value="Ebonyi">EBONYI</option>
+			<option value="Edo">EDO</option>
+			<option value="Ekiti">EKITI</option>
+			<option value="Enugu">ENUGU</option>
+			<option value="Gombe">GOMBE</option>
+			<option value="Imo">IMO</option>
+			<option value="Jigawa">JIGAWA</option>
+			<option value="Kaduna">KADUNA</option>
+			<option value="Kano">KANO</option>
+			<option value="Katsina">KATSINA</option>
+			<option value="Kebbi">KEBBI</option>
 			<option value="Kogi">KOGI</option>
+			<option value="Kwara">KWARA</option>
+			<option value="Lagos">LAGOS</option>
+			<option value="Nasarawa">NASARAWA</option>
+			<option value="Niger">NIGER</option>
+			<option value="Ogun">OGUN</option>
 			<option value="Ondo">ONDO</option>
+			<option value="Osun">OSUN</option>
+			<option value="Oyo">OYO</option>
+			<option value="Plateau">PLATEAU</option>
+			<option value="Rivers">RIVERS</option>
+			<option value="Sokoto">SOKOTO</option>
+			<option value="Taraba">TARABA</option>
+			<option value="Yobe">YOBE</option>
+			<option value="Zamfara">ZAMFARA</option>
+			<option value="Fct">FCT</option>
+
 		</select><br><br><br>
 
 		<input  placeholder="Select L.G.A" disabled>
@@ -69,7 +261,9 @@
 			<option value="Oriire">Oriire</option>
 			<option value="IbSouth">Ibadan South</option> -->
 		</select><br><br><br>
-		<input type="text"  placeholder="Input your community" id="community" class="inp" required><br><br><br>
+		<input type="text"  placeholder="Input your community" id="community" class="inp" onkeyup="comm()" required><br>
+		<span id="red" style="color: red"></span>
+		<br><br>
 		
 		<h3>CROPS PLANTED/LAND SIZE</h3>
 		<input type="text" id="crops" placeholder="crop planted" name="">&nbsp;
@@ -87,6 +281,30 @@
 	<button onclick="submit()">Submit</button>
 </div>
 <div id="reporter"></div>
+<script>
+	function comm(){
+	
+			 		 
+			 		var c = document.getElementById('community').value;
+			 		if (c.length!==0) {
+			 		var patt  =/^[a-zA-Z]+$/;
+			 		if (patt.test(c)==true) {
+			 			community.style.border = '1px solid blue' ;
+			 			red.style.display = 'none' ;
+			 		}
+			 		else {
+			 			community.value = "";
+			 			community.style.border = '2px solid red' ;
+			 			red.innerHTML = "invalid character, alphabet only!" ;
+			 			red.style.display = 'block' ;
+			 		
+			 		}
+			 	}
+			 	
+}
+	
+
+</script>
 
 <!--<div id="harvesting">-->
 	<!--<h1>HARVESTING DATA</h1>-->

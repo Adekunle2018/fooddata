@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style>
+		#loc {
+			border: none;
+			font-weight: bolder;
+			width: 80px;
+		}
+		#state {
+			border: none;
+			font-weight: bolder;
+			width: 110px;
+		}
+		#crops {
+			width: 80px;
+		}
+		#size {
+			width: 70px;
+		}
+		#acre {
+			width: 90px;
+		}
+	</style>
+
+	<script>
+		var cropsp = 0; var lands = 0;var acreHec = 0;
+		function b() {
+		
+
+		first.style.display = "block";
+		second.style.display = "none";
+		third.style.display = "none";
+		}
+
+		function clea(){
+			cropsp += 1;
+			lands += 1;
+			acreHec += 1;
+			
+			 cplanted.innerHTML += "<input type='text' id='crops" + cropsp + "' placeholder='crop planted' name=''>&nbsp;<input type='number' id='size" + lands +"' placeholder='land size' name=''>&nbsp;<input type='text' id='acre" + acreHec +"' placeholder='(Acre/Hectare)' name=''>&nbsp;&nbsp;<div onclick='clea()'><img src='add.png' style='width: 15px; height: 15px'></div>"
+		}
+
+	</script>
+</head>
+<body onload="b()">
+<div id="first">
+	<h1>PLANTING DATA</h1>
+	<form>
+		<h4>FARM LOCATION</h4>
+
+		<input type="" id="state" name="" placeholder="Select your state" disabled>
+		<select>
+			<option>OYO</option>
+			<option>NIGER</option>
+			<option>KEBBI</option>
+			<option>KADUNA</option>
+			<option>BENUE</option>
+			<option>KOGI</option>
+		</select><br><br><br>
+
+		<input type="" id="loc" name="" placeholder="Select L.G.A" disabled>
+		<select>
+			<option>Ogbomoso North</option>
+			<option>Ogbomoso South</option>
+			<option>Ogo Oluwa</option>
+			<option>Oriire</option>
+			<option>Ibadan South</option>
+		</select><br><br><br>
+		<input type="text" name="" placeholder="Input your community" class="inp" ><br><br><br>
+		
+		<div id="cplanted">
+		<h3>CROPS PLANTED/LAND SIZE</h3>
+		<input type="text" id="crops" placeholder="crop planted" name="">&nbsp;<input type="number" id="size" placeholder="land size" name="">&nbsp;<input type="text" id="acre" placeholder="(Acre/Hectare)" name="">&nbsp;&nbsp;<div onclick="clea()"><img src="add.png" style="width: 15px; height: 15px"></div>
+		</div>
+		<br><br><br>
+		<h4>PLANTING DATES</h4>
+		<input type="date" name="">
+	</form><br><br>
+	<button onclick="next()">Next page</button>
+</div>
+
+<div id="second">
+	<h1>HARVESTING DATA</h1>
+	<form>
+		<h4>FARM LOCATION</h4>
+
+		<input type="" id="state" name="" placeholder="Select your state" disabled>
+		<select>
+			<option>OYO</option>
+			<option>NIGER</option>
+			<option>KEBBI</option>
+			<option>KADUNA</option>
+			<option>BENUE</option>
+			<option>KOGI</option>
+		</select><br><br><br>
+
+		<input type="" id="loc" name="" placeholder="Select L.G.A" disabled>
+		<select>
+			<option>Ogbomoso North</option>
+			<option>Ogbomoso South</option>
+			<option>Ogo Oluwa</option>
+			<option>Oriire</option>
+			<option>Ibadan South</option>
+		</select><br><br><br>
+		<input type="text" name="" placeholder="Input your community" class="inp" ><br><br><br>
+		
+		<h3>CROPS YIELD/LAND SIZE</h3>
+		<input type="text" id="crops" placeholder="crop harvested" name="">&nbsp;<input type="text" id="yield" placeholder="crop yield" name=""><br><br>
+		<input type="number" placeholder="Land size" id="size" name=""> <input type="text" id="acre" placeholder="(Acre/Hectare)" name="">&nbsp;&nbsp;<button onclick="clea()"><img src="add.png" style="width: 15px; height: 15px"></button>
+		<br><br><br>
+		<h4>HARVESTING DATES</h4>
+		<input type="date" name="">
+	</form><br><br>
+	<button onclick="next2()">Next page</button>
+</div>
+
+<div id="third">
+	<h3>Extensionist Info</h3>
+ <form>
+ 	Name: <input type="text" name=""><br><br>
+ 	Sex: <input type="radio" name="sex">Female<input type="radio" name="sex">Male<br><br>
+ 	Contact: <input type="number" name="">
+ </form>
+ <br><br><br>
+ <h3>Farmer's Info</h3>
+ <form>
+ 	Name: <input type="text" name=""><br><br>
+ 	Sex: <input type="radio" name="sex">Female<input type="radio" name="sex">Male<br><br>
+ 	Contact: <input type="number" name="">
+ </form><br><br>
+ <button onclick="subm()">Submit</button>
+
+</div>
+</body>
+</html>    

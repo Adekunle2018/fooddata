@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.js"></script>
+</head>
+<body ng-app='myapp' ng-controller='mycontrol'>
+<div id="planting">
+	<h1>PLANTING DATA</h1>
+	<form id="plantD">
+		<h4>FARM LOCATION</h4>
+
+		<input placeholder="Select your state" disabled>
+		<select id="sta" onChange="stateChanger()" required>
+			
+</select>
+
+<select id="loc" required>
+			
+</select>
+</form>
+
+<input type="" name="" ng-model='name'>
+<input type="" name="" ng-model='mycolor'>
+<p>{{name}}</p>
+
+<div style="height: 200px;background: {{mycolor}}">
+	
+</div>
+<select ng-options="x.name for x in states" ng-model="selectedstate">
+	 
+</select>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+// 	var app=angular.module('myapp',[]);
+// 	app.controller('mycontrol',function($scope){
+// $scope.name='Teslim';
+// $scope.mycolor='black';
+
+// $scope.states=[{id:0,name:"oyo",locals:['saki eatst','saki west']},
+// 		{id:1,name:"osun",locals:['osun eatst','osun west']},
+// 		{id:2,name:"ekiti",locals:['osun eatst','osun west','osun west','osun west','osun west','osun west'
+// ,'osun west','osun west','osun west','osun west','osun west','osun west','osun west'
+// 		]}];
+
+
+
+// 	})
+
+
+	var dats='';
+	var states=[{id:0,name:"oyo",locals:['saki eatst','saki west']},
+		{id:1,name:"osun",locals:['osun eatst','osun west']},
+		{id:2,name:"ekiti",locals:['osun eatst','osun west','osun west','osun west','osun west','osun west'
+,'osun west','osun west','osun west','osun west','osun west','osun west','osun west'
+		]}];
+		
+	for (var i =0; i < states.length; i++) {
+		
+	 dats+="<option value="+states[i].id+">"+states[i].name+"</option>";
+		}
+	sta.innerHTML=dats;
+
+	function stateChanger(){
+		var locals='';
+			var id=sta.value;
+			locs=states[id].locals;
+			
+			for(var l=0;l<locs.length;l++){
+				
+				locals+="<option>"+states[id].locals[l]+"</option>";
+			}
+
+		loc.innerHTML=locals;		
+	}
+</script>
+ 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<script>
+		function cont(){
+			var z = document.getElementById('con').value;
+			if (z.length!==0) {
+			 		var patt  =/^[0-9]+$/;
+			 		if (patt.test(z)==true) {
+			 		}
+			 		else {
+			 			alert('invalid character, numbers only');
+			 			con.style.border='2px solid red'
+			 		
+			 		}
+
+			 
+			 	}
+
+		}
+
+
+
+	</script>
+	<h3>Extensionist Info</h3>
+ <form>
+ 	Name: <input type="text" name=""><br><br>
+ 	Sex: <input type="radio" name="sex">Female<input type="radio" name="sex">Male<br><br>
+ 	Ph: <input type="tel" name="">
+ </form>
+ <br><br><br>
+ <h3>Farmer's Info</h3>
+ <form>
+ 	Name: <input type="text" name=""><br><br>
+ 	Sex: <input type="radio" name="sex">Female<input type="radio" name="sex">Male<br><br>
+ 	Contact: <input type="text" name="" id="con" onkeyup="cont()" maxlength="10"><br/>
+ 	<span id="red"></span>
+ </form><br><br>
+
+ <button>Submit</button><br/><br/>
+
+</body>
+</html>
